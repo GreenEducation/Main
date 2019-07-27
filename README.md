@@ -1,1 +1,1 @@
-#Green Education's Main Website
+#GreenEd's Main Website
