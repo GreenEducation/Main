@@ -33,7 +33,7 @@ var App = function (_React$Component) {
         value: function changePage() {
             this.setState({
                 userID: 55,
-                page: "Changed"
+                page: "about"
             });
         }
     }, {

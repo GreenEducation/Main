@@ -16,7 +16,7 @@ class App extends React.Component {
     changePage() {
         this.setState({
             userID: 55,
-            page: "Changed"
+            page: "about"
         });
     }
     render() {
