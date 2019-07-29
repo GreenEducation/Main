@@ -13,17 +13,17 @@ function Header(props) {
         'Header',
         React.createElement(
             'button',
-            { onClick: props.changePage('home') },
+            { onClick: props.changePage },
             'Home'
         ),
         React.createElement(
             'button',
-            { onClick: props.changePage('about') },
+            { onClick: props.changePage },
             'About'
         ),
         React.createElement(
             'button',
-            { onClick: props.changePage('contact') },
+            { onClick: props.changePage },
             'Contact'
         )
     );
