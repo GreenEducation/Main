@@ -31,7 +31,7 @@ var App = function (_React$Component) {
     _createClass(App, [{
         key: 'changePage',
         value: function changePage(page) {
-            this.state.page = page;
+            this.setState({ page: page });
         }
     }, {
         key: 'render',

@@ -14,7 +14,7 @@ class App extends React.Component {
         this.changePage = this.changePage.bind(this);
     }
     changePage(page) {
-        this.state.page = page;
+        this.setState({page: page});
     }
     render() {
         return(
