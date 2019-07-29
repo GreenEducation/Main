@@ -10,9 +10,9 @@ function Header(props) {
     return(
         <div style={headerStyles}>
             Header
-            <button onClick={this.props.changePage('home')}>Home</button>
-            <button onClick={this.props.changePage('about')}>About</button>
-            <button onClick={this.props.changePage('contact')}>Contact</button>
+            <button onClick={props.changePage('home')}>Home</button>
+            <button onClick={props.changePage('about')}>About</button>
+            <button onClick={props.changePage('contact')}>Contact</button>
         </div>
     );
 }
