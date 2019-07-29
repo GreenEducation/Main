@@ -33,7 +33,6 @@ var App = function (_React$Component) {
                 'div',
                 null,
                 React.createElement(Header, null),
-                this.state.page == "home" && React.createElement(Home, null) || this.state.page == "about" && React.createElement(About, null) || this.state.page == "contact" && React.createElement(Contact, null),
                 React.createElement(Footer, null)
             );
         }
