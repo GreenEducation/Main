@@ -30,10 +30,10 @@ var App = function (_React$Component) {
 
     _createClass(App, [{
         key: 'changePage',
-        value: function changePage(page) {
+        value: function changePage() {
             this.setState({
                 userID: 55,
-                page: page
+                page: "Changed"
             });
         }
     }, {

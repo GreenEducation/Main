@@ -7,15 +7,12 @@ const headerStyles = {
 };
 
 function Header(props) {
-    const handleClick = (p) => {
-        props.changePage(p);
-    }
     return(
         <div style={headerStyles}>
             Header
-            <button onClick={handleClick("home")}>Home</button>
-            <button onClick={handleClick("about")}>About</button>
-            <button onClick={handleClick("contact")}>Contact</button>
+            <button onClick={props.changePage}>Home</button>
+            <button onClick={props.changePage}>About</button>
+            <button onClick={props.changePage}>Contact</button>
         </div>
     );
 }

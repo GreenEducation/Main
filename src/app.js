@@ -13,10 +13,10 @@ class App extends React.Component {
         };
         this.changePage = this.changePage.bind(this);
     }
-    changePage(page) {
+    changePage() {
         this.setState({
             userID: 55,
-            page: page
+            page: "Changed"
         });
     }
     render() {
