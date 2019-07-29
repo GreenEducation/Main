@@ -7,7 +7,7 @@ var headerStyles = {
 };
 
 function Header(props) {
-    handleClick = function handleClick(p) {
+    var handleClick = function handleClick(p) {
         props.changePage(p);
     };
     return React.createElement(
@@ -16,17 +16,17 @@ function Header(props) {
         'Header',
         React.createElement(
             'button',
-            { onClick: this.handleClick("home") },
+            { onClick: handleClick("home") },
             'Home'
         ),
         React.createElement(
             'button',
-            { onClick: this.handleClick("about") },
+            { onClick: handleClick("about") },
             'About'
         ),
         React.createElement(
             'button',
-            { onClick: this.handleClick("contact") },
+            { onClick: handleClick("contact") },
             'Contact'
         )
     );
