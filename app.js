@@ -32,8 +32,7 @@ var App = function (_React$Component) {
             return React.createElement(
                 'div',
                 null,
-                React.createElement(Header, null),
-                React.createElement(Footer, null)
+                React.createElement(Header, null)
             );
         }
     }]);

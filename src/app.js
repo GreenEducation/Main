@@ -17,9 +17,9 @@ class App extends React.Component {
                 <Header />
                 { /*(this.state.page == "home" && <Home />) ||
                   (this.state.page == "about" && <About />) ||
-                  (this.state.page == "contact" && <Contact />)*/
+                  (this.state.page == "contact" && <Contact />)
+                <Footer />*/
                 }
-                <Footer />
             </div>
         );
     }
