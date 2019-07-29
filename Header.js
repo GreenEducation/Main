@@ -7,23 +7,26 @@ var headerStyles = {
 };
 
 function Header(props) {
+    handleClick = function handleClick(p) {
+        props.changePage(p);
+    };
     return React.createElement(
         'div',
         { style: headerStyles },
         'Header',
         React.createElement(
             'button',
-            { onClick: props.changePage },
+            { onClick: handleClick("home") },
             'Home'
         ),
         React.createElement(
             'button',
-            { onClick: props.changePage },
+            { onClick: handleClick("about") },
             'About'
         ),
         React.createElement(
             'button',
-            { onClick: props.changePage },
+            { onClick: handleClick("contact") },
             'Contact'
         )
     );
