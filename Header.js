@@ -16,17 +16,17 @@ function Header(props) {
         'Header',
         React.createElement(
             'button',
-            { onClick: handleClick("home") },
+            { onClick: this.handleClick("home") },
             'Home'
         ),
         React.createElement(
             'button',
-            { onClick: handleClick("about") },
+            { onClick: this.handleClick("about") },
             'About'
         ),
         React.createElement(
             'button',
-            { onClick: handleClick("contact") },
+            { onClick: this.handleClick("contact") },
             'Contact'
         )
     );

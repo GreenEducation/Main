@@ -13,9 +13,9 @@ function Header(props) {
     return(
         <div style={headerStyles}>
             Header
-            <button onClick={handleClick("home")}>Home</button>
-            <button onClick={handleClick("about")}>About</button>
-            <button onClick={handleClick("contact")}>Contact</button>
+            <button onClick={this.handleClick("home")}>Home</button>
+            <button onClick={this.handleClick("about")}>About</button>
+            <button onClick={this.handleClick("contact")}>Contact</button>
         </div>
     );
 }
