@@ -31,8 +31,10 @@ var App = function (_React$Component) {
     _createClass(App, [{
         key: 'changePage',
         value: function changePage(page) {
-            console.log("page");
-            this.setState({ page: page });
+            this.setState({
+                userID: 55,
+                page: page
+            });
         }
     }, {
         key: 'render',
@@ -41,6 +43,7 @@ var App = function (_React$Component) {
                 'div',
                 null,
                 React.createElement(Header, { changePage: this.changePage }),
+                this.state.userID,
                 this.state.page == "home" && React.createElement(Home, null) || this.state.page == "about" && React.createElement(About, null) || this.state.page == "contact" && React.createElement(Contact, null),
                 React.createElement(Footer, null)
             );

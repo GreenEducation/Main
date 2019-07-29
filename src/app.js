@@ -14,13 +14,16 @@ class App extends React.Component {
         this.changePage = this.changePage.bind(this);
     }
     changePage(page) {
-        console.log("page");
-        this.setState({page: page});
+        this.setState({
+            userID: 55,
+            page: page
+        });
     }
     render() {
         return(
             <div>
                 <Header changePage={this.changePage}/>
+                {this.state.userID}
                 { (this.state.page == "home" && <Home />) ||
                   (this.state.page == "about" && <About />) ||
                   (this.state.page == "contact" && <Contact />)
