@@ -1,7 +1,8 @@
 import Header from './Header.js';
-/*import About from './About';
-import Contact from './Contact';
-import Footer from './Footer';*/
+import Home from './Home.js';
+import About from './About.js';
+import Contact from './Contact.js';
+import Footer from './Footer.js';
 
 class App extends React.Component {
     constructor(props) {
@@ -10,16 +11,20 @@ class App extends React.Component {
             userID: 2065,
             page: 'home'
         };
+        this.changePage = this.changePage.bind(this);
+    }
+    changePage(page) {
+        this.state.page = page;
     }
     render() {
         return(
             <div>
-                <Header />
-                { /*(this.state.page == "home" && <Home />) ||
+                <Header changePage={this.changePage}/>
+                { (this.state.page == "home" && <Home />) ||
                   (this.state.page == "about" && <About />) ||
                   (this.state.page == "contact" && <Contact />)
-                <Footer />*/
                 }
+                <Footer />
             </div>
         );
     }

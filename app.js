@@ -7,9 +7,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 import Header from './Header.js';
-/*import About from './About';
-import Contact from './Contact';
-import Footer from './Footer';*/
+import Home from './Home.js';
+import About from './About.js';
+import Contact from './Contact.js';
+import Footer from './Footer.js';
 
 var App = function (_React$Component) {
     _inherits(App, _React$Component);
@@ -23,16 +24,24 @@ var App = function (_React$Component) {
             userID: 2065,
             page: 'home'
         };
+        _this.changePage = _this.changePage.bind(_this);
         return _this;
     }
 
     _createClass(App, [{
+        key: 'changePage',
+        value: function changePage(page) {
+            this.state.page = page;
+        }
+    }, {
         key: 'render',
         value: function render() {
             return React.createElement(
                 'div',
                 null,
-                React.createElement(Header, null)
+                React.createElement(Header, { changePage: this.changePage }),
+                this.state.page == "home" && React.createElement(Home, null) || this.state.page == "about" && React.createElement(About, null) || this.state.page == "contact" && React.createElement(Contact, null),
+                React.createElement(Footer, null)
             );
         }
     }]);
