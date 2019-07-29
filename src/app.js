@@ -1,4 +1,4 @@
-import Header from './Header';
+import Header from './Header.js';
 /*import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';*/
